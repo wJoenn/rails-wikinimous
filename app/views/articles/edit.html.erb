@@ -1,0 +1,12 @@
+<div id="edit">
+  <h1>Edit Article</h1>
+
+  <%= render "components/form", article: @article %>
+
+  <ul id="links">
+    <%= link_to article_path(@article.id) do %>
+      <i class="fa-solid fa-rotate-left smaller"></i>
+      Back to article
+    <% end %>
+  </ul>
+</div>

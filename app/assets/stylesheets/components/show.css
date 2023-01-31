@@ -1,0 +1,19 @@
+.show-title {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  margin-bottom: 50px;
+}
+
+.show-title h1 {
+  font-weight: 500;
+}
+
+.show-title a {
+  transition: filter 0.1s ease;
+}
+
+.show-title a:hover {
+  filter: brightness(120%);
+}

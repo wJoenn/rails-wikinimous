@@ -1,0 +1,17 @@
+.index-article {
+  margin: 0px 0 20px;
+  transition: margin 0.1s ease;
+}
+
+.index-article a {
+  font-size: 30px;
+  transition: font-size 0.1s ease;
+}
+
+.index-article a:hover {
+  font-size: 33px;
+}
+
+.index-article:has(a:hover) {
+  margin: -2px 0 20px;
+}

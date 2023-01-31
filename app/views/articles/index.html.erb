@@ -1,0 +1,8 @@
+<div id="index">
+  <% @articles.each do |a| %>
+    <div class="index-article">
+      <%= link_to a.title, article_path(a.id) %>
+      <p><%= a.content %></p>
+    </div>
+  <% end %>
+</div>

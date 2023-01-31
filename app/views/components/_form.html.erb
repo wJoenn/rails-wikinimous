@@ -1,0 +1,13 @@
+<%= form_with model: article do |f| %>
+  <div class="form-field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="form-field">
+    <%= f.label :content %>
+    <%= f.text_area :content, data: { editor: 'markdown' }, rows: 10 %>
+  </div>
+
+  <%= f.submit class: "btn" %>
+<% end %>
